@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <style>
+        html,
+        body {
+            margin: 0;
+            background-color: #242424;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ui equal width center aligned padded grid">
+        <div class="row">
+            <div class="column">
+                <h1>Simple Sign In App Example</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+            </div>
+            <div class="column">
+                <div class="ui fluid card">
+                    <div class="image">
+                        <img src="<%= picture %>">
+                    </div>
+                    <div class="content">
+                        <span class="header"><%= givenName %></span>
+                        <div class="meta">
+                            <span class="date"><%= provider %></span>
+                        </div>
+                        <div class="description">
+                            <%= name %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column"></div>
+        </div>
+        <div class="row">
+        </div>
+    </div>
+</body>
+
+</html>
